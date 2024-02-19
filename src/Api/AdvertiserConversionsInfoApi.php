@@ -6,7 +6,7 @@ use Scraper\ScraperAffilae\Model\Response;
 
 class AdvertiserConversionsInfoApi extends AffilaeApi
 {
-    public function execute(): array
+    public function execute(): Response
     {
         return $this->serializer->deserialize(
             $this->response->getContent(),
